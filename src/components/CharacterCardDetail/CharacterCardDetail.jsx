@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CharDetail from "./CharDetail/CharDetail";
 import "./CharacterCardDetail.scss";
+import NotFound from "../NotFound/NotFound";
+import CharHouseDetail from "./CharHouseDetail/CharHouseDetail";
 
 const CharacterCardDetail = ({ character }) => {
   return (
@@ -9,12 +11,13 @@ const CharacterCardDetail = ({ character }) => {
       <Link to="/characters">← Go back to characters</Link>
       <figure className="figure">
         <div className="figure-div">
-          <img className="figure-div__img" src={character.image} alt={character.name}/>
+        {character.image === "https://vignette.wikia.nocookie.net/gameofthrones/images/9/96/Oberyn-Martell-house-martell-37118334-2832-4256.jpg/revision/latest/scale-to-width-down/333?cb=20150815065729" || character.image ==="https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Grenn.jpg/revision/latest?cb=20180702193920" ? <NotFound /> : (character.image ? <img src={character.image} alt={character.name}/> : <NotFound />)}
         </div>
         <figcaption className="figure-caption">{character.name}</figcaption>
       </figure>
       <div className="div-details">
-        <CharDetail detail={character.allegiances} title="House" />
+        <CharHouseDetail detail={character.house} title="house"/>
+        {/* <CharDetail detail={character.house} title="House" /> */}
         <CharDetail detail={character.allegiances} title="allegiances" />
         <CharDetail detail={character.appearances} title="appearences" />
         <CharDetail detail={character.father} title="father" />

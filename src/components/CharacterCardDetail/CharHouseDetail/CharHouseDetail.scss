@@ -1,0 +1,14 @@
+.div-house {
+  &__title {
+  }
+
+  &__container {
+    width: 200px;
+    img {
+      width: 100%;
+    }
+    p{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  }
+}

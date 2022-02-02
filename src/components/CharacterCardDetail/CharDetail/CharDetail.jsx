@@ -12,5 +12,5 @@ const CharDetail = (props) => {
       </div>
   </div>;
 };
-
+  
 export default CharDetail;
