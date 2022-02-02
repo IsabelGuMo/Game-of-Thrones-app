@@ -14,14 +14,13 @@ const CharacterDetail = () => {
     if (id)
       getCharacterById(id).then((data) => {
         setCharacter(data);
-        console.log(data)
+        console.log(data);
       });
   }, []);
 
   
   return (
     <div>
-    <h4>{character.name}</h4>
       {character.length !== 0 ? <CharacterCardDetail character={character} /> : <NotFound />}
     </div>
   );

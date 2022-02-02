@@ -1,0 +1,13 @@
+.chardetail-container {
+    width: 200px;
+  &__title {
+  }
+
+  &__div {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    height: 400px;
+    overflow: hidden;
+    &--detail {
+    }
+  }
+}
