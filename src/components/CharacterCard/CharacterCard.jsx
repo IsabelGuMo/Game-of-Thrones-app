@@ -4,25 +4,10 @@ import "./CharacterCard.scss";
 
 const CharacterCard = ({ character }) => {
   return (
-    /* <Link
-      className="character-div"
-      to={generatePath("/characters/:id", { id: character.id })}
-    >
-      <figure className="container">
-        <div className="div-img">
-          <img className="image" src={character.image} alt={character.name} />
-        </div>
-        <div className="overlay">
-          <figcaption className="overlay-name">
-            {character.name}
-          </figcaption>
-        </div>
-      </figure>
-    </Link> */
-    <Link className="character-div" to={generatePath("/characters/:id", { id: character.id })}>
+    <Link className="character-div" to={generatePath("/characters/:name", { name: character.name })}>
       <figure className="character-div__card">
         <div className="character-div__card--img">
-          <img src={character.image} alt={character.name} />
+          <img src={character.image} alt={character.name} /> {/* FALTA ARREGLAR EN ONERROR */}
         </div>
         <div className="character-div__card--div">
         <figcaption  className="character-div__card--div-name">{character.name}</figcaption>
@@ -32,3 +17,6 @@ const CharacterCard = ({ character }) => {
   );
 };
 export default CharacterCard;
+
+
+//https://res.cloudinary.com/ddbvk5mrr/image/upload/v1643814766/Game%20of%20thrones/Not_today_v1grrc.jpg

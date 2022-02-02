@@ -12,8 +12,6 @@ const Characters = () => {
     });
   }, []);
 
-  console.log("Characters:", characters);
-
   return (
     <div>
       <h2>Characters</h2>

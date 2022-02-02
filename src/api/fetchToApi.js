@@ -10,8 +10,8 @@ export const getCharacters = () => {
   });
 };
 
-export const getCharacterId = (id) => {
-  return fetch(`${GOTURL}${id}`).then((res) => {
+export const getCharacterById = (name) => {
+  return fetch(`https://api.got.show/api/show/characters/${name}`).then((res) => {
     if (res.ok) {
       return res.json();
     } else {
