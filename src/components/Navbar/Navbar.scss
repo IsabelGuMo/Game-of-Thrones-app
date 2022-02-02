@@ -1,0 +1,11 @@
+.navbar {
+  width: 100%;
+  background-color: black;
+  &-ul {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+  }
+}
