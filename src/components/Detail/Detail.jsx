@@ -1,8 +1,9 @@
-import "./CharDetail.scss"
+import "./Detail.scss"
 
-const CharDetail = (props) => {
+
+const Detail = (props) => {
     console.log( "looog", props)
-    console.log("log 2", typeof(props.detail));;
+    console.log("log 2", typeof(props.detail));
   return <div className='chardetail-container'>
       <h4 className='chardetail-container__tile'>{props.title}</h4>
       <div className="chardetail-container__div">
@@ -12,5 +13,5 @@ const CharDetail = (props) => {
       </div>
   </div>;
 };
-  
-export default CharDetail;
+
+export default Detail;

@@ -23,6 +23,7 @@ const CharacterDetail = () => {
     <div>
       {character.length !== 0 ? <CharacterCardDetail character={character} /> : <NotFound />}
     </div>
+    
   );
 };
 

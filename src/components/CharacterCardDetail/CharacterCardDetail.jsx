@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CharDetail from "./CharDetail/CharDetail";
+import Detail from "../Detail/Detail";
 import "./CharacterCardDetail.scss";
 import NotFound from "../NotFound/NotFound";
 import CharHouseDetail from "./CharHouseDetail/CharHouseDetail";
@@ -17,12 +17,11 @@ const CharacterCardDetail = ({ character }) => {
       </figure>
       <div className="div-details">
         <CharHouseDetail detail={character.house} title="house"/>
-        {/* <CharDetail detail={character.house} title="House" /> */}
-        <CharDetail detail={character.allegiances} title="allegiances" />
-        <CharDetail detail={character.appearances} title="appearences" />
-        <CharDetail detail={character.father} title="father" />
-        <CharDetail detail={character.siblings} title="siblings" />
-        <CharDetail detail={character.titles} title="titles" />
+        <Detail detail={character.allegiances} title="allegiances" />
+        <Detail detail={character.appearances} title="appearences" />
+        <Detail detail={character.father} title="father" />
+        <Detail detail={character.siblings} title="siblings" />
+        <Detail detail={character.titles} title="titles" />
       </div>
     </div>
   );

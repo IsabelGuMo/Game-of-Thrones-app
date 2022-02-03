@@ -5,11 +5,11 @@ import "./Navbar.scss";
 const Navbar = () => {
   return <nav className='navbar'>
       <ul className='navbar-ul'>
-      <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "inactive")}>
-        Home
-      </NavLink>
       <NavLink to="/characters" className={({ isActive }) => (isActive ? "active" : "inactive")}>
-        Characters
+      Characters
+      </NavLink>
+      <NavLink to="/houses" className={({ isActive }) => (isActive ? "active" : "inactive")}>
+        Houses
       </NavLink>
       <NavLink to="/chronology" className={({ isActive }) => (isActive ? "active" : "inactive")}>
         Chronology
