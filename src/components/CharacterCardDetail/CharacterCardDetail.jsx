@@ -16,7 +16,7 @@ const CharacterCardDetail = ({ character }) => {
         <figcaption className="figure-caption">{character.name}</figcaption>
       </figure>
       <div className="div-details">
-        <CharHouseDetail detail={character.house} title="house"/>
+        <CharHouseDetail  detail={character.house} title="house"/>
         <Detail detail={character.allegiances} title="allegiances" />
         <Detail detail={character.appearances} title="appearences" />
         <Detail detail={character.father} title="father" />

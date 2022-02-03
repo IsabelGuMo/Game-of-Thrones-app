@@ -14,7 +14,6 @@ const HouseDetail = () => {
     if (id)
     getHouseByName(id).then((data) => {
         setHouse(data);
-        console.log(data);
       });
   }, []);
 

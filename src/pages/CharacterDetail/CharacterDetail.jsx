@@ -14,7 +14,6 @@ const CharacterDetail = () => {
     if (id)
       getCharacterById(id).then((data) => {
         setCharacter(data);
-        console.log(data);
       });
   }, []);
 
