@@ -3,6 +3,7 @@ import { getHouses } from '../../api/fetchToApi';
 import HouseCard from '../../components/HouseCard/HouseCard';
 import "./Houses.scss"
 
+
 const Houses = () => {
   const [houses, setHouses] = useState([]);
 

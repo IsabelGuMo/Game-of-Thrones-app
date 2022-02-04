@@ -8,8 +8,10 @@ import Chornology from "./pages/Chronology/Chornology";
 import CharacterDetail from "./pages/CharacterDetail/CharacterDetail";
 import HouseDetail from "./pages/HouseDetail/HouseDetail";
 import Houses from "./pages/Houses/Houses";
+import { useState } from "react";
 
 function App() {
+  const [search, setSearch] = useState("");
   return (
     <div className="App">
       <Router>
@@ -17,9 +19,9 @@ function App() {
         <main className="app-div">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/characters" element={<Characters />} />
+            <Route path="/characters" element={<Characters props={{ search, setSearch }} />}/>
             <Route path="/characters/:id" element={<CharacterDetail />} />
-            <Route path="/houses" element={<Houses />} />
+            <Route path="/houses" element={<Houses props={{ search, setSearch }}/>} />
             <Route path="/houses/:id" element={<HouseDetail />} />
             <Route path="/chronology" element={<Chornology />} />
           </Routes>

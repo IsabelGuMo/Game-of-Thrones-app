@@ -44,3 +44,15 @@ export const getHouseByName = (house) => {
     }
   });
 };
+
+
+
+/* export const searchByName = async () => {
+  const res = await fetch("https://api.got.show/api/show/characters/");
+  const characters = await res.json();
+  return {
+    props: {
+      characters,
+    },
+  };
+}; */
