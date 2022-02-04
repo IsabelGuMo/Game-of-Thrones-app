@@ -1,5 +1,3 @@
-
-
 function Search(props) {
   const handleCharacter = (e) => {
     props.props.setSearch(e.target.value.toLowerCase());

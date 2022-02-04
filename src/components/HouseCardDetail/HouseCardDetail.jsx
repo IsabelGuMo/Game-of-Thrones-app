@@ -23,7 +23,6 @@ const houseShield = [
 const HouseCardDetail = ({ house }) => {
   return (
     <div>
-      <Link to="/houses">← Go back to houses</Link>
       <figure className="figure">
         <div className="figure-div">
         {houseShield.includes(house.logoURL) ? (<NotFoundShield />) : house.logoURL ? (<img src={house.logoURL} alt={house.name} />) : (<NotFoundShield />)}
