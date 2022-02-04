@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-left{
+        &__card{
+            height: 300px;
+            width: 300px;
+            margin: 5px;
+        }
+    }
+}

@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import Characters from "./pages/Characters/Characters";
-import Chornology from "./pages/Chronology/Chornology";
+import Chronology from "./pages/Chronology/Chronology";
 import CharacterDetail from "./pages/CharacterDetail/CharacterDetail";
 import HouseDetail from "./pages/HouseDetail/HouseDetail";
 import Houses from "./pages/Houses/Houses";
@@ -23,7 +23,7 @@ function App() {
             <Route path="/characters/:id" element={<CharacterDetail />} />
             <Route path="/houses" element={<Houses props={{ search, setSearch }}/>} />
             <Route path="/houses/:id" element={<HouseDetail />} />
-            <Route path="/chronology" element={<Chornology />} />
+            <Route path="/chronology" element={<Chronology />} />
           </Routes>
         </main>
         <Navbar />
