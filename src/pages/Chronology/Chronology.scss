@@ -1,13 +1,112 @@
-.container{
+.divSort{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    &-btn{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        background-color: transparent;
+        color: whitesmoke;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        overflow: hidden;
 
-    &-left{
-        &__card{
-            height: 300px;
-            width: 300px;
-            margin: 5px;
+        &__sort{
+            width: 100%;
+            background-color: whitesmoke;
         }
     }
+    .arrowDown{
+        transform: rotate();
+    }
+    .arrowUp{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-left {
+    &__card {
+
+      height: 300px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 3px whitesmoke solid;
+      border-right: 3px whitesmoke solid;
+
+      &--age {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          margin: 5px 0;
+      }
+      &--name {
+          margin-bottom: 5px;
+      }
+      &--div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+
+        .img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-right {
+    &__card {
+      height: 300px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 3px whitesmoke solid;
+      &--age {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 5px 0;
+      }
+      &--name {
+        margin-bottom: 5px;
+      }
+      &--div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+
+        .img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.chronology-components {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  width: 78%;
+  padding: 0 10px;
+}
+
+.chronology-navbar {
+  position: fixed;
+  z-index: 1;
+  bottom: 10px;
+  width: 78%;
 }

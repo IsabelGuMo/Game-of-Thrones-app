@@ -21,10 +21,7 @@ const houseShield = [
 const HouseCard = ({ house }) => {
 
   return (
-    <Link
-      className="house-div"
-      to={generatePath("/houses/:name", { name: house.name })}
-    >
+    <Link className="house-div" to={generatePath("/houses/:name", { name: house.name })}>
       <figure className="house-div__card">
         <div className="house-div__card--img">
           {houseShield.includes(house.logoURL) ? (<NotFoundShield />) : house.logoURL ? (<img src={house.logoURL} alt={house.name} />) : (<NotFoundShield />)}

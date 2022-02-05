@@ -1,5 +1,31 @@
-.houses-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+.houses {
+    &-components {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        width: 78%;
+        padding: 0 10px;
+
+        &__right{
+          display: flex;
+          align-items: center;
+        }
+    }
+  
+    &-container {
+      overflow-y: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &-navbar{
+      position: fixed;
+      z-index: 1;
+      bottom: 10px;
+      width: 78%;
+    }
+  }

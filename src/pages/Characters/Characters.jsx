@@ -4,6 +4,8 @@ import CharacterCard from "../../components/CharacterCard/CharacterCard";
 import "./Characters.scss";
 import Search from "./../../components/Searcher/Searcher.jsx";
 import GoHome from "../../components/GoHome/GoHome";
+import Navbar from "../../components/Navbar/Navbar";
+import Languages from "../../components/Languages/Languages";
 
 const Characters = ({ props }) => {
   console.log(props);
@@ -20,14 +22,21 @@ const Characters = ({ props }) => {
   }, [props.search]);
 
   return (
-    <div>
-      <h2>Characters</h2>
+    <div className="characters">
+    <div className="characters-components">
       <Search props={props}/>
+      <div className="characters-components__right">
       <GoHome/>
+      <Languages />
+      </div>
+    </div>
       <div className="characters-container">
         {characters.map((character) => (
           <CharacterCard key={character.id} character={character} />
         ))}
+      </div>
+      <div className="characters-navbar">
+        <Navbar/>
       </div>
     </div>
   );

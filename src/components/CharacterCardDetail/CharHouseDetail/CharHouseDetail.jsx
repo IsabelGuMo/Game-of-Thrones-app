@@ -16,11 +16,9 @@ const CharHouseDetail = ({ detail }) => {
   return (
     <div className="div-house">
         <h4 className="div-house__title">House</h4>
-      {/* <Link to={"/houses/" + house.name}> */}
         <div className="div-house__container">
           {typeof house == "undefined" ? <p>None</p>: (house.logoURL ?  <Link to={"/houses/" + house.name}><img src={house.logoURL} alt={house.name}/> </Link> : <NotFoundShield />)}
         </div>
-      {/*  */}
     </div>
   );
 };

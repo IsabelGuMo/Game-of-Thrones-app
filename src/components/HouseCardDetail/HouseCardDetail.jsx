@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Detail from "../Detail/Detail";
 import "./HouseCardDetail.scss";
 import NotFoundShield from "../NotFound/NotFoundShield";
@@ -22,7 +21,7 @@ const houseShield = [
 
 const HouseCardDetail = ({ house }) => {
   return (
-    <div>
+    <div className="detailContainer">
       <figure className="figure">
         <div className="figure-div">
         {houseShield.includes(house.logoURL) ? (<NotFoundShield />) : house.logoURL ? (<img src={house.logoURL} alt={house.name} />) : (<NotFoundShield />)}

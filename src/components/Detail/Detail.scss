@@ -1,14 +1,18 @@
-.chardetail-container {
-    /* width: 200px; */
+.detail {
+  /* width: 200px; */
 
-
-  &__div {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  &-title {
+    font-size: 22px;
+  }
+  &-div {
+    margin-top: 27px;
+    font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+    font-weight: lighter;
     height: 200px;
-    width: 200px;
+    width: 245px;
     overflow-y: auto;
-    &--detail {
-      margin: 10px;
+    &__detail {
+      margin-bottom: 15px;
     }
   }
 }

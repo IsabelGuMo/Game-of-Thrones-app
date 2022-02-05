@@ -1,0 +1,38 @@
+.houseDetail {
+    &-components {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        width: 78%;
+        padding: 0 10px;
+
+        &__right{
+          display: flex;
+          align-items: center;
+        }
+        
+        &__back{
+          font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+          font-size: 25px;
+          font-weight: lighter;
+          display: flex;
+          align-items: center;
+          width: 100px;
+
+          p{
+            margin-left: 20px;
+          }
+        }
+    }
+  
+    &-container {
+      overflow-y: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }

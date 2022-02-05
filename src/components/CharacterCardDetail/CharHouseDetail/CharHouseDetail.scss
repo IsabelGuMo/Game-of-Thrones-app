@@ -1,12 +1,16 @@
 .div-house {
-
+  &__title{
+    font-size: 22px;
+  }
   &__container {
-    width: 200px;
+    margin-top: 27px;
+    width: 170px;
     img {
       width: 100%;
     }
     p{
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+      font-weight: lighter;
     }
   }
 }

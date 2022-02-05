@@ -1,0 +1,29 @@
+.figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-div {
+      height: 320px;
+      width: 240px;
+      overflow: hidden;
+      img {
+        min-height: 300px;
+        width: 100%;
+      }
+    }
+    &-caption {
+      margin-top: 25px;
+      font-size: 30px;
+      width: 100%;
+    }
+  }
+  
+  .div-details {
+    width: 80vw;
+    margin: 52px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
