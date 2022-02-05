@@ -12,6 +12,12 @@ let charactersOdd = [];
 
 const Chronology = () => {
   const [highToLow, setHighToLow] = useState(true);
+  const [isActive, setActive] = useState("true")
+
+  const handeToggle = () => {
+    setActive(!isActive)
+    repeat()
+  }
 
   const charactersAge = () => {
     charactersArray = [];
@@ -69,26 +75,19 @@ const Chronology = () => {
         <GoHome />
         <Languages />
       </div>
-      <div className="divSort">
-        <button className="divSort-btn" onClick={repeat}>
+      <div className="divSort" >
+        <button className="divSort-btn" onClick={handeToggle}>
           <img
             className="divSort-btn__sort"
             src="https://res.cloudinary.com/ddbvk5mrr/image/upload/v1644065100/Game%20of%20thrones/sort_ncaoex.png"
             alt="sort img"
           />
         </button>
-        {highToLow ? (
           <img
+          className={isActive ? "arrowDown" : "arrowUp"}
             src="https://res.cloudinary.com/ddbvk5mrr/image/upload/v1644064477/Game%20of%20thrones/flechita_hacia_abajo_fnhc1f.svg"
             alt="arrow pointing down"
           />
-        ) : (
-          <img
-            className="arrowUp"
-            src="https://res.cloudinary.com/ddbvk5mrr/image/upload/v1644064477/Game%20of%20thrones/flechita_hacia_abajo_fnhc1f.svg"
-            alt="imagen rara"
-          />
-        )}
       </div>
       <div className="container">
         <div className="container-left">
