@@ -1,5 +1,14 @@
+@import "../../index.scss";
+
 .detail {
-  /* width: 200px; */
+  @media (max-width: ($tablet)) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: ($phone)) {
+    height: 150px;
+    margin-top: 60px;
+  }
+
 
   &-title {
     font-size: 22px;
@@ -9,8 +18,20 @@
     font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
     font-weight: lighter;
     height: 200px;
-    width: 245px;
+    width: 200px;
     overflow-y: auto;
+
+    @media (max-width: ($tablet)) {
+      width: 245px;
+    }
+
+    @media (max-width: ($phone)) {
+      width: 245px;
+      height: auto;
+      max-height: 150px;
+      overflow-y: scroll;
+    }
+
     &__detail {
       margin-bottom: 15px;
     }

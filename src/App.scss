@@ -1,13 +1,20 @@
+@import "./index.scss";
+
 .App {
   text-align: center;
   color: whitesmoke;
 }
 
-.app-div{
-  padding: 0 90px;
+.app-div {
   height: 76vh;
   overflow-y: auto;
-  scrollbar-base-color: black;
-  margin: 0 100px;
-
+  margin: 0 5vw;
+  @media (max-width: ($tablet)) {
+    margin: 0;
+    height: 83vh;
+  }
+  @media (max-width: ($phone)) {
+    margin: 0;
+    height: 83vh;
+  }
 }

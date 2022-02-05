@@ -5,21 +5,26 @@
   src: url(../public/Game_of_Thrones.ttf);
 }
 
-*{
+//Variables
+$phone: 576px;
+$tablet: 768px;
+$desktop: 992px;
+
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'got', sans-serif;
+  font-family: "got", sans-serif;
   background-color: black;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: whitesmoke;
 }
@@ -28,17 +33,24 @@ a{
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: whitesmoke; 
+  background: whitesmoke;
   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke; 
+@media (max-width: ($tablet)) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: ($phone)) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -1,19 +1,57 @@
+@import "../../index.scss";
+
 .characters {
+  margin: 0 80px;
+  @media (max-width: ($tablet)) {
+    margin: 0 0 50px 0;
+  }
+
   &-components {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    width: 78%;
+    padding: 0 10px;
+    @media (max-width: ($tablet)) {
+      width: 100%;
+      font-size: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 100px;
-      position: fixed;
-      z-index: 1;
-      top: 20px;
-      width: 78%;
-      padding: 0 10px;
+    }
+    @media (max-width: ($phone)) {
+      width: 100%;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 10px;
+    }
 
-      &__right{
+    &__right {
+      display: flex;
+      align-items: center;
+      @media (max-width: ($tablet)) {
+        width: 50%;
+        font-size: 14px;
+        margin-right: 20px;
         display: flex;
+        justify-content: flex-end;
         align-items: center;
       }
+      @media (max-width: ($phone)) {
+        width: 50%;
+        font-size: 14px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
   }
 
   &-container {
@@ -22,10 +60,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  &-navbar{
+  &-navbar {
     position: fixed;
-    z-index: 1;
     bottom: 10px;
-    width: 78%;
+    width: 79.6%;
+    @media (max-width: ($tablet)) {
+      width: 100%;
+    }
   }
 }

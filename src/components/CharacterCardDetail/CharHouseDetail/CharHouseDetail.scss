@@ -1,10 +1,24 @@
+@import "../../../index.scss";
+
 .div-house {
+  @media (max-width: ($tablet)) {
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  @media (max-width: ($phone)) {
+      margin-top: 60px;
+    }
   &__title{
     font-size: 22px;
   }
   &__container {
     margin-top: 27px;
     width: 170px;
+    
+
     img {
       width: 100%;
     }
