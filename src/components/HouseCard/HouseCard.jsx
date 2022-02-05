@@ -18,10 +18,10 @@ const houseShield = [
   "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/House_Towers_North.png/revision/latest?cb=20190125205248",
 ];
 
-const HouseCard = ({ house }) => {
+const HouseCard = ({ house, props }) => {
 
   return (
-    <Link className="house-div" to={generatePath("/houses/:name", { name: house.name })}>
+    <Link className="house-div" onClick={() => props.setSearch("")} to={generatePath("/houses/:name", { name: house.name })}>
       <figure className="house-div__card">
         <div className="house-div__card--img">
           {houseShield.includes(house.logoURL) ? (<NotFoundShield />) : house.logoURL ? (<img src={house.logoURL} alt={house.name} />) : (<NotFoundShield />)}

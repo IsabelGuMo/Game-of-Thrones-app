@@ -30,11 +30,11 @@ const Houses = ({props}) => {
     </div>
       <div className="houses-container">
       {houses.map((house) => (
-      <HouseCard key={house.name} house={house}/>
+      <HouseCard key={house.name} house={house} props={props}/>
       ))}
       </div>
       <div className="houses-navbar">
-        <Navbar/>
+        <Navbar props={props}/>
       </div>
     </div>
   );

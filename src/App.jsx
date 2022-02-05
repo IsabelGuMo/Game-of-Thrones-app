@@ -15,8 +15,8 @@ import { useState } from "react";
 
 
 function App() {
-  
   const [search, setSearch] = useState("");
+  
   return (
     <div className="App">
       <Router>

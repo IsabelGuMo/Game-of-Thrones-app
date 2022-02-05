@@ -126,7 +126,7 @@ const Chronology = () => {
         </div>
       </div>
       <div className="chronology-navbar">
-        <Navbar />
+        <Navbar/>
       </div>
     </>
   );
