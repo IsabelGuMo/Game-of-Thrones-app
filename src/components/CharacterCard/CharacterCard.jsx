@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, generatePath } from "react-router-dom";
 import "./CharacterCard.scss";
 import NotFound from "../NotFound/NotFound.jsx"

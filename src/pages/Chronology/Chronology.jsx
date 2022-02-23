@@ -57,7 +57,7 @@ const Chronology = () => {
 
   useEffect(() => {
     charactersAge();
-  }, []);
+  }, [charactersAge]);
 
   const repeat = () => {
     if (highToLow) {

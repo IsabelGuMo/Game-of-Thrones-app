@@ -12,7 +12,7 @@ const CharHouseDetail = ({ detail }) => {
         setHouse(data[0]);
         console.log(data[0]);
       });
-  }, []);
+  }, [detail]);
   return (
     <div className="div-house">
         <h4 className="div-house__title">House</h4>

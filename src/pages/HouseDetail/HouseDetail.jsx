@@ -17,7 +17,7 @@ const HouseDetail = () => {
       getHouseByName(id).then((data) => {
         setHouse(data);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div className="houseDetail">
