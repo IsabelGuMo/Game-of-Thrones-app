@@ -17,7 +17,7 @@ const CharacterDetail = () => {
       getCharacterById(id).then((data) => {
         setCharacter(data);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div className="characterDetail">
