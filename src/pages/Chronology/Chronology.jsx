@@ -57,7 +57,7 @@ const Chronology = () => {
 
   useEffect(() => {
     charactersAge();
-  }, [charactersAge]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const repeat = () => {
     if (highToLow) {
